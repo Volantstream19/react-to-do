@@ -1,5 +1,10 @@
 import React from 'react';
 
 export default function Todo() {
-  return <div>Todo</div>;
+  return (
+    <div>
+      <input></input>
+      <button>Add Todo</button>
+    </div>
+  );
 }
