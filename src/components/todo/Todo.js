@@ -14,6 +14,7 @@ export default function Todo() {
     try {
       const newTodos = await addTodo({ description: input, complete: false });
       setTodo((prevItems) => [...prevItems, newTodos]);
+      setInput('');
     } catch (e) {
       // eslint-disable-next-line no-console
       console.error(e.message);

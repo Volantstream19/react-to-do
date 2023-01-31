@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { getAll } from '../services/todos.js';
 
 export default function useTodo() {

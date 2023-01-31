@@ -1,0 +1,58 @@
+body {
+  font-family: 'Itim', cursive;
+  overflow: hidden;
+}
+
+.sign-container {
+  display: flex;
+  background-color: #333;
+}
+
+.sign-in {
+  display: flex;
+  padding-right: 10px;
+  color: aliceblue;
+  transition: background 0.3s;
+  border-radius: 5px;
+}
+.sign-up {
+  display: flex;
+  padding-left: 3px;
+  color: aliceblue;
+  transition: background 0.3s;
+  border-radius: 5px;
+}
+
+.sign-up:hover {
+  background: rgb(167, 167, 167);
+  border-radius: 5px;
+}
+
+.sign-in:hover {
+  background: rgb(167, 167, 167);
+  border-radius: 5px;
+}
+
+.logout-container {
+  display: flex;
+  background-color: #333;
+  justify-content: center;
+}
+
+.todo-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+}
+
+.log-out {
+  position: fixed;
+  display: flex;
+  padding: 5px;
+  color: aliceblue;
+  left: 0%;
+  top: 0%;
+  justify-content: center;
+  align-items: center;
+}

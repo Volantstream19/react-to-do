@@ -25,24 +25,32 @@ export default function Auth() {
   };
 
   return (
-    <div className="auth">
-      Email:
-      <input
-        className="auth-email"
-        type="text"
-        value={email}
-        placeholder="username..."
-        onChange={(e) => setEmail(e.target.value)}
-      ></input>
-      Password:
-      <input
-        type="text"
-        className="auth-password"
-        value={password}
-        placeholder="password..."
-        onChange={(e) => setPassword(e.target.value)}
-      ></input>
-      <button onClick={signUp}>+</button>
+    <div className="auth-container">
+      <form className="auth-form">
+        <div className="form-input">
+          <label>Email:</label>
+          <input
+            type="text"
+            value={email}
+            placeholder="username..."
+            onChange={(e) => setEmail(e.target.value)}
+          ></input>
+        </div>
+        <div className="form-input">
+          <label>Password:</label>
+          <input
+            type="password"
+            value={password}
+            placeholder="password..."
+            onChange={(e) => setPassword(e.target.value)}
+          ></input>
+        </div>
+        <div className="form-actions">
+          <button className="auth-button" type="submit" onClick={signUp}>
+            +
+          </button>
+        </div>
+      </form>
     </div>
   );
 }
