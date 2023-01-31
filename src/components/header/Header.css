@@ -55,4 +55,11 @@ body {
   top: 0%;
   justify-content: center;
   align-items: center;
+  transition: background 0.3s;
+  border-radius: 5px;
+}
+
+.log-out:hover {
+  background: rgb(167, 167, 167);
+  border-radius: 5px;
 }
