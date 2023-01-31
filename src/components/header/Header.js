@@ -17,7 +17,6 @@ export default function Header() {
 
   return (
     <>
-      <h1> Welcome To Your List </h1>
       {!user && (
         <>
           <div>
@@ -35,7 +34,7 @@ export default function Header() {
         <>
           <h1>Hello User</h1>
           <Link onClick={handleLogOut} to="/auth/sign-in">
-            Log Out
+            <h3>Log Out</h3>
           </Link>
         </>
       )}

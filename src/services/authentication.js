@@ -4,7 +4,7 @@ export function getUser() {
   return client.auth.currentUser;
 }
 
-export async function authUser(type, email, password) {
+export async function authUser(email, password, type) {
   let response;
   if (type === 'sign-up') {
     response = await client.auth.signUp({ email, password });
